@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto&display=swap");
+
+/*   Variables */
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-primary: #5ec8f1;
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins);
+  /* padding-top: 60px; */
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  z-index: 1;
+}
+
+/* Header */
+
+#header nav {
+  height: 10vh;
+  background-color: var(--color-black) !important;
+}
+
+#header nav ul li a {
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 10px 25px;
+  transition: all 500ms;
+}
+
+#header nav ul li a:hover {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-white);
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  background: url(./img/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* top: 10vh; */
+}
+
+#hero .hero-content {
+  height: 100vh;
+}
+
+#hero .hero-content img {
+  border-radius: 50%;
+}
+
+#hero .hero-content h1 {
+  color: var(--color-white);
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+#hero .hero-content p > span {
+  color: var(--color-white);
+  font-size: 1.5em;
+}
+
+#header .navbar-toggler {
+  color: var(--color-white);
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  #header nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-black);
+    overflow: hidden;
+  }
+
+  #header nav ul li a {
+    display: block;
+    padding: 5px 10px;
+  }
+  .navbar-toggler {
+    z-index: 100;
+  }
+}
+
+/* About Me */
+.fa-chevron-right {
+  color: var(--color-primary);
+}
+
+/* Skills */
+.skill-icons {
+  height: 22vh;
+  background-color: var(--color-black);
+}
+
+.skill-icon {
+  color: var(--color-white);
+}
+
+.skill-icon:hover {
+  color: var(--color-primary);
+}
+
+/* Portfolio */
+#portfolio .portfolio-item {
+  position: relative;
+}
+
+#portfolio .portfolio-item .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  font-size: 0.9em;
+}
+
+#portfolio .portfolio-item .overlay a {
+  color: var(--color-white);
+  padding: 5px;
+  text-decoration: none;
+}
+
+#portfolio .portfolio-item .overlay a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+/* Contact */
+.social-icons .fab {
+  color: var(--color-black);
+}
+
+.fa-facebook:hover {
+  color: #3f5c9a;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-instagram:hover {
+  color: #d20d1e;
+}
+.fa-linkedin:hover {
+  color: #2977c9;
+}
+
+#contact .card:hover {
+  border: 1px solid var(--color-primary);
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+}
+
+.btn-contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-white);
+}
+
+.btn-contact:hover {
+  color: var(--color-primary);
+}
+
+#about h2,
+#skills h2,
+#portfolio h2,
+#contact h2 {
+  font-family: var(--font-roboto);
+  font-weight: bold;
+}
